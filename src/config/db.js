@@ -1,13 +1,14 @@
 import mongoose from "mongoose";
-
+import { configDotenv } from "dotenv";
+configDotenv();
 // Only default to localhost if we are not running on Vercel (serverless environment)
-const MONGO_URI = process.env.MONGO_URI || process.env.MONGODB_URI || (!process.env.VERCEL ? "mongodb://127.0.0.1:27017/mediabundle" : null);
+const MONGODB_URI = process.env.MONGO_URI || process.env.MONGODB_URI || (!process.env.VERCEL ? "mongodb://127.0.0.1:27017/mediabundle" : null);
 
 let connectionInstance = null;
 
 const connectDB = async () => {
     // 1. If MONGO_URI is not defined (e.g. on Vercel without environment variables configured), skip connection
-    if (!MONGO_URI) {
+    if (!MONGODB_URI) {
         console.warn("Database connection skipped: MONGO_URI / MONGODB_URI environment variable is not defined on Vercel.");
         return null;
     }
@@ -28,7 +29,7 @@ const connectDB = async () => {
 
     try {
         console.log("Establishing new MongoDB connection...");
-        const connection = await mongoose.connect(MONGO_URI);
+        const connection = await mongoose.connect(MONGODB_URI);
         connectionInstance = connection;
         console.log(`MongoDB connected: ${connection.connection.host}`);
         return connectionInstance;
