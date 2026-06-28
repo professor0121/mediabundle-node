@@ -2,7 +2,8 @@ import http from 'http';
 import app from './src/app.js';
 import connectDB from './src/config/db.js';
 
-const PORT = 5151;
+import { configDotenv } from 'dotenv';
+configDotenv();
 
 // Establish database connection (runs asynchronously in serverless environments)
 connectDB().catch((error) => {
@@ -12,12 +13,6 @@ connectDB().catch((error) => {
 const server = http.createServer(app);
 
 // Only listen on a port if we are not running on Vercel
-if (!process.env.VERCEL) {
-    server.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
-}
-
-server.on('error', (error) => {
-    console.log(error);
+server.listen(process.env.PORT || 3000, () => {
+    console.log(`Server is running on port ${process.env.PORT || 3000}`);
 });
-
-export default app;

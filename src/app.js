@@ -13,7 +13,12 @@ app.use(express.static(publicPath, {
 
 // Fallback to 404.html for any unmatched routes
 app.use((req, res) => {
-    res.status(404).sendFile(path.join(publicPath, "404.html"));
+    res.status(404).sendFile(path.join(publicPath, "404.html"), (err) => {
+        if (err) {
+            // Fallback if the static 404 file is not bundled in the serverless environment
+            res.status(404).send("<h1>404 Not Found</h1>");
+        }
+    });
 });
 
 export default app;
