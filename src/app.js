@@ -1,9 +1,12 @@
 import express from "express";
 import path from "path";
+import fs from "fs";
 import cors from "cors";
 import morgan from "morgan";
 import cookieParser from "cookie-parser";
+import ejs from "ejs";
 import apiRouter from "./routes/index.js";
+import pageRouter from "./routes/page.routes.js";
 import errorMiddleware from "./middlewares/error.middleware.js";
 
 const app = express();
@@ -21,13 +24,19 @@ app.use(cookieParser());
 // Use process.cwd() to resolve paths reliably both locally and in serverless environments like Vercel
 const publicPath = path.join(process.cwd(), "public");
 
+// Configure EJS view engine for rendering HTML templates server-side
+app.engine("html", ejs.renderFile);
+app.set("view engine", "html");
+app.set("views", publicPath);
+
 // Register API Routes
 app.use("/api/v1", apiRouter);
 
-// Serve static files from the public folder and support clean URLs (.html extension)
-app.use(express.static(publicPath, {
-    extensions: ["html", "htm"]
-}));
+// Register Page Views Router (SSR)
+app.use("/", pageRouter);
+
+// Serve static files from the public folder (CSS, JS, images, etc.)
+app.use(express.static(publicPath));
 
 // Global Error Handler Middleware
 app.use(errorMiddleware);

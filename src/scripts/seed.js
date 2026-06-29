@@ -28,7 +28,7 @@ const seedDatabase = async () => {
 
         const admin = await User.create({
             username: "admin",
-            email: "admin@technova.io",
+            email: "admin@mediabundle.io",
             password: adminPassword,
             role: "admin",
             avatar: "https://api.dicebear.com/7.x/adventurer-neutral/svg?seed=admin",
@@ -53,8 +53,8 @@ const seedDatabase = async () => {
                 price: 49,
                 features: ["3 Pages Design", "Mobile Responsive", "Basic SEO Setup", "1 Month Support"],
                 imageUrl: "https://cdn.prod.website-files.com/65129f2d60f024bc29b6a85a/6544e77c542043fb0ef703bc_about-hero-image.jpg",
-                demoUrl: "https://technova.io/demo/basic",
-                downloadUrl: "https://technova.io/download/basic",
+                demoUrl: "https://mediabundle.io/demo/basic",
+                downloadUrl: "https://mediabundle.io/download/basic",
                 owner: admin._id,
                 isFeatured: false
             },
@@ -65,8 +65,8 @@ const seedDatabase = async () => {
                 price: 99,
                 features: ["7 Pages Design", "Mobile Responsive", "Advanced SEO Setup", "Contact Form Setup", "3 Months Support"],
                 imageUrl: "https://cdn.prod.website-files.com/65129f2d60f024bc29b6a85a/6544e794542043fb0ef70fcb_about-hero-image-right.jpg",
-                demoUrl: "https://technova.io/demo/standard",
-                downloadUrl: "https://technova.io/download/standard",
+                demoUrl: "https://mediabundle.io/demo/standard",
+                downloadUrl: "https://mediabundle.io/download/standard",
                 owner: admin._id,
                 isFeatured: true
             },
@@ -77,8 +77,8 @@ const seedDatabase = async () => {
                 price: 199,
                 features: ["Unlimited Pages", "Custom UI/UX Design", "E-commerce Integration", "Premium SEO Bundle", "Priority 24/7 Support", "Database Integration"],
                 imageUrl: "https://cdn.prod.website-files.com/65129f2d60f024bc29b6a85a/6544ed3dd3b4ca9cace347e4_ceo-image.jpg",
-                demoUrl: "https://technova.io/demo/pro",
-                downloadUrl: "https://technova.io/download/pro",
+                demoUrl: "https://mediabundle.io/demo/pro",
+                downloadUrl: "https://mediabundle.io/download/pro",
                 owner: admin._id,
                 isFeatured: true
             },
@@ -89,7 +89,7 @@ const seedDatabase = async () => {
                 price: 299,
                 features: ["React Integration", "Tailwind CSS styling", "Live WebSocket stats"],
                 imageUrl: "https://cdn.prod.website-files.com/65438e658397c735408007ce/6545db4a4278e4f6d5d5b981_team-01.jpg",
-                demoUrl: "https://technova.io/projects/ai-dashboard",
+                demoUrl: "https://mediabundle.io/projects/ai-dashboard",
                 owner: admin._id,
                 isFeatured: true
             },
@@ -100,7 +100,7 @@ const seedDatabase = async () => {
                 price: 29,
                 features: ["Framer Motion animations", "Grid layouts", "Custom typography"],
                 imageUrl: "https://cdn.prod.website-files.com/65438e658397c735408007ce/6545db546fa16d731391f913_team-02.jpg",
-                demoUrl: "https://technova.io/projects/minimal-portfolio",
+                demoUrl: "https://mediabundle.io/projects/minimal-portfolio",
                 owner: admin._id,
                 isFeatured: false
             }
@@ -193,7 +193,7 @@ const seedDatabase = async () => {
             name: "John Doe",
             email: "john@example.com",
             subject: "Partnership Proposal",
-            message: "Hello TechNova team, we would love to partner with you for our upcoming product launch. Let us know when you are free to discuss.",
+            message: "Hello MediaBundle team, we would love to partner with you for our upcoming product launch. Let us know when you are free to discuss.",
             status: "unread"
         });
 
