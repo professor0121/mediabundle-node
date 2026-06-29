@@ -47,14 +47,13 @@ const blogSchema = new mongoose.Schema(
 );
 
 // Pre-validate hook to generate slugs from the title automatically
-blogSchema.pre("validate", function (next) {
+blogSchema.pre("validate", function () {
     if (this.title && !this.slug) {
         this.slug = this.title
             .toLowerCase()
             .replace(/[^a-z0-9]+/g, "-")
             .replace(/(^-|-$)+/g, "");
     }
-    next();
 });
 
 // Indexes for slug, author, status, and tags
