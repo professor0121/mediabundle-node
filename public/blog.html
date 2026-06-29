@@ -6,19 +6,19 @@
 <head>
   <meta charset="utf-8" />
   <link crossorigin="anonymous" href="https://cdn.prod.website-files.com" rel="preconnect" />
-  <title>Blog - TechNova Webflow HTML website template</title>
+  <title>Blog - MediaBundle Webflow HTML website template</title>
   <meta
-    content="TechNova: webflow agency template designed for agencies, digital companies, and IT organizations seeking to create a professional and engaging online presence!"
+    content="MediaBundle: webflow agency template designed for agencies, digital companies, and IT organizations seeking to create a professional and engaging online presence!"
     name="description" />
-  <meta content="Blog - TechNova Webflow HTML website template" property="og:title" />
+  <meta content="Blog - MediaBundle Webflow HTML website template" property="og:title" />
   <meta
-    content="TechNova: webflow agency template designed for agencies, digital companies, and IT organizations seeking to create a professional and engaging online presence!"
+    content="MediaBundle: webflow agency template designed for agencies, digital companies, and IT organizations seeking to create a professional and engaging online presence!"
     property="og:description" />
   <meta content="https://cdn.prod.website-files.com/65129f2d60f024bc29b6a85a/654b68afc5c1945a4b225f89_og-image.jpg"
     property="og:image" />
-  <meta content="Blog - TechNova Webflow HTML website template" name="twitter:title" />
+  <meta content="Blog - MediaBundle Webflow HTML website template" name="twitter:title" />
   <meta
-    content="TechNova: webflow agency template designed for agencies, digital companies, and IT organizations seeking to create a professional and engaging online presence!"
+    content="MediaBundle: webflow agency template designed for agencies, digital companies, and IT organizations seeking to create a professional and engaging online presence!"
     name="twitter:description" />
   <meta content="https://cdn.prod.website-files.com/65129f2d60f024bc29b6a85a/654b68afc5c1945a4b225f89_og-image.jpg"
     name="twitter:image" />
@@ -66,141 +66,13 @@
               <div class="nav-btn-mobile"><a class="primary-button with-icon w-button" href="/contact">Get in Touch</a>
               </div>
             </nav>
-            <div class="w-commerce-commercecartwrapper" data-node-type="commerce-cart-wrapper" data-open-product=""
-              data-wf-cart-query="query Dynamo3 {
-  database {
-    id
-    commerceOrder {
-      comment
-      extraItems {
-        name
-        pluginId
-        pluginName
-        price {
-          decimalValue
-          string
-          unit
-          value
-        }
-      }
-      id
-      startedOn
-      statusFlags {
-        hasDownloads
-        hasSubscription
-        isFreeOrder
-        requiresShipping
-      }
-      subtotal {
-        decimalValue
-        string
-        unit
-        value
-      }
-      total {
-        decimalValue
-        string
-        unit
-        value
-      }
-      updatedOn
-      userItems {
-        count
-        id
-        price {
-          value
-          unit
-          decimalValue
-          string
-        }
-        product {
-          id
-          cmsLocaleId
-          draft
-          archived
-          f_ec_product_type_2dr10dr: productType {
-            id
-            name
-          }
-          f_name_: name
-          f_sku_properties_3dr: skuProperties {
-            id
-            name
-            enum {
-              id
-              name
-              slug
-            }
-          }
-        }
-        rowTotal {
-          decimalValue
-          string
-          unit
-          value
-        }
-        sku {
-          cmsLocaleId
-          draft
-          archived
-          f_main_image_4dr: mainImage {
-            url
-            file {
-              size
-              origFileName
-              createdOn
-              updatedOn
-              mimeType
-              width
-              height
-              variants {
-                origFileName
-                quality
-                height
-                width
-                s3Url
-                error
-                size
-              }
-            }
-            alt
-          }
-          f_sku_values_3dr: skuValues {
-            property {
-              id
-            }
-            value {
-              id
-            }
-          }
-          id
-        }
-        subscriptionFrequency
-        subscriptionInterval
-        subscriptionTrial
-      }
-      userItemsCount
-    }
-  }
-  site {
-    commerce {
-      id
-      businessAddress {
-        country
-      }
-      defaultCountry
-      defaultCurrency
-      quickCheckoutEnabled
-    }
-  }
-}" data-wf-cart-type="modal" data-wf-page-link-href-prefix=""><a aria-haspopup="dialog" aria-label="Open cart"
+            <div class="w-commerce-commercecartwrapper" data-node-type="commerce-cart-wrapper" data-open-product="" data-wf-cart-type="modal" data-wf-page-link-href-prefix=""><a aria-haspopup="dialog" aria-label="Open cart"
                 class="w-commerce-commercecartopenlink nav-link cart w-inline-block"
                 data-node-type="commerce-cart-open-link" href="#" role="button">
                 <div>
                   <div class="w-inline-block">Cart</div>
                   <div class="w-inline-block"> (</div>
-                  <div class="w-commerce-commercecartopenlinkcount cart-quantity"
-                    data-wf-bindings="%5B%7B%22innerHTML%22%3A%7B%22type%22%3A%22Number%22%2C%22filter%22%3A%7B%22type%22%3A%22numberPrecision%22%2C%22params%22%3A%5B%220%22%2C%22numberPrecision%22%5D%7D%2C%22dataPath%22%3A%22database.commerceOrder.userItemsCount%22%7D%7D%5D">
+                  <div class="w-commerce-commercecartopenlinkcount cart-quantity">
                     0</div>
                   <div class="w-inline-block">)</div>
                 </div>
@@ -226,41 +98,29 @@
                     <form class="w-commerce-commercecartform" data-node-type="commerce-cart-form" style="display:none">
                       <script id="wf-template-4178f669-1e51-428d-1b87-cadba8ffd64c"
                         type="text/x-wf-template">%3Cdiv%20class%3D%22w-commerce-commercecartitem%22%3E%3Cimg%20data-wf-bindings%3D%22%255B%257B%2522src%2522%253A%257B%2522type%2522%253A%2522ImageRef%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522identity%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.sku.f_main_image_4dr%2522%257D%257D%255D%22%20src%3D%22%22%20alt%3D%22%22%20class%3D%22w-commerce-commercecartitemimage%20w-dyn-bind-empty%22%2F%3E%3Cdiv%20class%3D%22w-commerce-commercecartiteminfo%22%3E%3Cdiv%20data-wf-bindings%3D%22%255B%257B%2522innerHTML%2522%253A%257B%2522type%2522%253A%2522PlainText%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522identity%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.product.f_name_%2522%257D%257D%255D%22%20class%3D%22w-commerce-commercecartproductname%20w-dyn-bind-empty%22%3E%3C%2Fdiv%3E%3Cdiv%20data-wf-bindings%3D%22%255B%257B%2522innerHTML%2522%253A%257B%2522type%2522%253A%2522CommercePrice%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522price%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.price%2522%257D%257D%255D%22%3E%24%C2%A00.00%C2%A0USD%3C%2Fdiv%3E%3Cscript%20type%3D%22text%2Fx-wf-template%22%20id%3D%22wf-template-4178f669-1e51-428d-1b87-cadba8ffd652%22%3E%253Cli%253E%253Cspan%2520data-wf-bindings%253D%2522%25255B%25257B%252522innerHTML%252522%25253A%25257B%252522type%252522%25253A%252522PlainText%252522%25252C%252522filter%252522%25253A%25257B%252522type%252522%25253A%252522identity%252522%25252C%252522params%252522%25253A%25255B%25255D%25257D%25252C%252522dataPath%252522%25253A%252522database.commerceOrder.userItems%25255B%25255D.product.f_sku_properties_3dr%25255B%25255D.name%252522%25257D%25257D%25255D%2522%2520class%253D%2522w-dyn-bind-empty%2522%253E%253C%252Fspan%253E%253Cspan%253E%253A%2520%253C%252Fspan%253E%253Cspan%2520data-wf-bindings%253D%2522%25255B%25257B%252522innerHTML%252522%25253A%25257B%252522type%252522%25253A%252522CommercePropValues%252522%25252C%252522filter%252522%25253A%25257B%252522type%252522%25253A%252522identity%252522%25252C%252522params%252522%25253A%25255B%25255D%25257D%25252C%252522dataPath%252522%25253A%252522database.commerceOrder.userItems%25255B%25255D.product.f_sku_properties_3dr%25255B%25255D%252522%25257D%25257D%25255D%2522%2520class%253D%2522w-dyn-bind-empty%2522%253E%253C%252Fspan%253E%253C%252Fli%253E%3C%2Fscript%3E%3Cul%20data-wf-bindings%3D%22%255B%257B%2522optionSets%2522%253A%257B%2522type%2522%253A%2522CommercePropTable%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522identity%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.product.f_sku_properties_3dr%5B%5D%2522%257D%257D%252C%257B%2522optionValues%2522%253A%257B%2522type%2522%253A%2522CommercePropValues%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522identity%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.sku.f_sku_values_3dr%2522%257D%257D%255D%22%20class%3D%22w-commerce-commercecartoptionlist%22%20data-wf-collection%3D%22database.commerceOrder.userItems%255B%255D.product.f_sku_properties_3dr%22%20data-wf-template-id%3D%22wf-template-4178f669-1e51-428d-1b87-cadba8ffd652%22%3E%3Cli%3E%3Cspan%20data-wf-bindings%3D%22%255B%257B%2522innerHTML%2522%253A%257B%2522type%2522%253A%2522PlainText%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522identity%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.product.f_sku_properties_3dr%255B%255D.name%2522%257D%257D%255D%22%20class%3D%22w-dyn-bind-empty%22%3E%3C%2Fspan%3E%3Cspan%3E%3A%20%3C%2Fspan%3E%3Cspan%20data-wf-bindings%3D%22%255B%257B%2522innerHTML%2522%253A%257B%2522type%2522%253A%2522CommercePropValues%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522identity%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.product.f_sku_properties_3dr%255B%255D%2522%257D%257D%255D%22%20class%3D%22w-dyn-bind-empty%22%3E%3C%2Fspan%3E%3C%2Fli%3E%3C%2Ful%3E%3Ca%20href%3D%22%23%22%20role%3D%22button%22%20data-wf-bindings%3D%22%255B%257B%2522data-commerce-sku-id%2522%253A%257B%2522type%2522%253A%2522ItemRef%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522identity%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.sku.id%2522%257D%257D%255D%22%20class%3D%22btn-link%20w-inline-block%22%20data-wf-cart-action%3D%22remove-item%22%20data-commerce-sku-id%3D%22%22%20aria-label%3D%22Remove%20item%20from%20cart%22%3E%3Cdiv%3ERemove%3C%2Fdiv%3E%3C%2Fa%3E%3C%2Fdiv%3E%3Cinput%20aria-label%3D%22Update%20quantity%22%20data-wf-bindings%3D%22%255B%257B%2522value%2522%253A%257B%2522type%2522%253A%2522Number%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522numberPrecision%2522%252C%2522params%2522%253A%255B%25220%2522%252C%2522numberPrecision%2522%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.count%2522%257D%257D%252C%257B%2522data-commerce-sku-id%2522%253A%257B%2522type%2522%253A%2522ItemRef%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522identity%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.sku.id%2522%257D%257D%255D%22%20data-wf-conditions%3D%22%257B%2522condition%2522%253A%257B%2522fields%2522%253A%257B%2522product%253Aec-product-type%2522%253A%257B%2522ne%2522%253A%2522e348fd487d0102946c9179d2a94bb613%2522%252C%2522type%2522%253A%2522Option%2522%257D%257D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D%2522%257D%22%20class%3D%22w-commerce-commercecartquantity%22%20required%3D%22%22%20pattern%3D%22%5E%5B0-9%5D%2B%24%22%20inputMode%3D%22numeric%22%20type%3D%22number%22%20name%3D%22quantity%22%20autoComplete%3D%22off%22%20data-wf-cart-action%3D%22update-item-quantity%22%20data-commerce-sku-id%3D%22%22%20value%3D%221%22%2F%3E%3C%2Fdiv%3E</script>
-                      <div class="w-commerce-commercecartlist" data-wf-collection="database.commerceOrder.userItems"
-                        data-wf-template-id="wf-template-4178f669-1e51-428d-1b87-cadba8ffd64c">
+                      <div class="w-commerce-commercecartlist">
                         <div class="w-commerce-commercecartitem"><img alt=""
                             class="w-commerce-commercecartitemimage w-dyn-bind-empty"
-                            data-wf-bindings="%5B%7B%22src%22%3A%7B%22type%22%3A%22ImageRef%22%2C%22filter%22%3A%7B%22type%22%3A%22identity%22%2C%22params%22%3A%5B%5D%7D%2C%22dataPath%22%3A%22database.commerceOrder.userItems%5B%5D.sku.f_main_image_4dr%22%7D%7D%5D"
                             src="" />
                           <div class="w-commerce-commercecartiteminfo">
-                            <div class="w-commerce-commercecartproductname w-dyn-bind-empty"
-                              data-wf-bindings="%5B%7B%22innerHTML%22%3A%7B%22type%22%3A%22PlainText%22%2C%22filter%22%3A%7B%22type%22%3A%22identity%22%2C%22params%22%3A%5B%5D%7D%2C%22dataPath%22%3A%22database.commerceOrder.userItems%5B%5D.product.f_name_%22%7D%7D%5D">
+                            <div class="w-commerce-commercecartproductname w-dyn-bind-empty">
                             </div>
-                            <div
-                              data-wf-bindings="%5B%7B%22innerHTML%22%3A%7B%22type%22%3A%22CommercePrice%22%2C%22filter%22%3A%7B%22type%22%3A%22price%22%2C%22params%22%3A%5B%5D%7D%2C%22dataPath%22%3A%22database.commerceOrder.userItems%5B%5D.price%22%7D%7D%5D">
+                            <div>
                               $ 0.00 USD</div>
                             <script id="wf-template-4178f669-1e51-428d-1b87-cadba8ffd652"
                               type="text/x-wf-template">%3Cli%3E%3Cspan%20data-wf-bindings%3D%22%255B%257B%2522innerHTML%2522%253A%257B%2522type%2522%253A%2522PlainText%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522identity%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.product.f_sku_properties_3dr%255B%255D.name%2522%257D%257D%255D%22%20class%3D%22w-dyn-bind-empty%22%3E%3C%2Fspan%3E%3Cspan%3E%3A%20%3C%2Fspan%3E%3Cspan%20data-wf-bindings%3D%22%255B%257B%2522innerHTML%2522%253A%257B%2522type%2522%253A%2522CommercePropValues%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522identity%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.product.f_sku_properties_3dr%255B%255D%2522%257D%257D%255D%22%20class%3D%22w-dyn-bind-empty%22%3E%3C%2Fspan%3E%3C%2Fli%3E</script>
-                            <ul class="w-commerce-commercecartoptionlist"
-                              data-wf-bindings="%5B%7B%22optionSets%22%3A%7B%22type%22%3A%22CommercePropTable%22%2C%22filter%22%3A%7B%22type%22%3A%22identity%22%2C%22params%22%3A%5B%5D%7D%2C%22dataPath%22%3A%22database.commerceOrder.userItems%5B%5D.product.f_sku_properties_3dr[]%22%7D%7D%2C%7B%22optionValues%22%3A%7B%22type%22%3A%22CommercePropValues%22%2C%22filter%22%3A%7B%22type%22%3A%22identity%22%2C%22params%22%3A%5B%5D%7D%2C%22dataPath%22%3A%22database.commerceOrder.userItems%5B%5D.sku.f_sku_values_3dr%22%7D%7D%5D"
-                              data-wf-collection="database.commerceOrder.userItems%5B%5D.product.f_sku_properties_3dr"
-                              data-wf-template-id="wf-template-4178f669-1e51-428d-1b87-cadba8ffd652">
-                              <li><span class="w-dyn-bind-empty"
-                                  data-wf-bindings="%5B%7B%22innerHTML%22%3A%7B%22type%22%3A%22PlainText%22%2C%22filter%22%3A%7B%22type%22%3A%22identity%22%2C%22params%22%3A%5B%5D%7D%2C%22dataPath%22%3A%22database.commerceOrder.userItems%5B%5D.product.f_sku_properties_3dr%5B%5D.name%22%7D%7D%5D"></span><span>:
-                                </span><span class="w-dyn-bind-empty"
-                                  data-wf-bindings="%5B%7B%22innerHTML%22%3A%7B%22type%22%3A%22CommercePropValues%22%2C%22filter%22%3A%7B%22type%22%3A%22identity%22%2C%22params%22%3A%5B%5D%7D%2C%22dataPath%22%3A%22database.commerceOrder.userItems%5B%5D.product.f_sku_properties_3dr%5B%5D%22%7D%7D%5D"></span>
+                            <ul class="w-commerce-commercecartoptionlist">
+                              <li><span class="w-dyn-bind-empty"></span><span>:
+                                </span><span class="w-dyn-bind-empty"></span>
                               </li>
                             </ul><a aria-label="Remove item from cart" class="btn-link w-inline-block"
                               data-commerce-sku-id=""
-                              data-wf-bindings="%5B%7B%22data-commerce-sku-id%22%3A%7B%22type%22%3A%22ItemRef%22%2C%22filter%22%3A%7B%22type%22%3A%22identity%22%2C%22params%22%3A%5B%5D%7D%2C%22dataPath%22%3A%22database.commerceOrder.userItems%5B%5D.sku.id%22%7D%7D%5D"
                               data-wf-cart-action="remove-item" href="#" role="button">
                               <div>Remove</div>
                             </a>
                           </div><input aria-label="Update quantity" autocomplete="off"
                             class="w-commerce-commercecartquantity" data-commerce-sku-id=""
-                            data-wf-bindings="%5B%7B%22value%22%3A%7B%22type%22%3A%22Number%22%2C%22filter%22%3A%7B%22type%22%3A%22numberPrecision%22%2C%22params%22%3A%5B%220%22%2C%22numberPrecision%22%5D%7D%2C%22dataPath%22%3A%22database.commerceOrder.userItems%5B%5D.count%22%7D%7D%2C%7B%22data-commerce-sku-id%22%3A%7B%22type%22%3A%22ItemRef%22%2C%22filter%22%3A%7B%22type%22%3A%22identity%22%2C%22params%22%3A%5B%5D%7D%2C%22dataPath%22%3A%22database.commerceOrder.userItems%5B%5D.sku.id%22%7D%7D%5D"
                             data-wf-cart-action="update-item-quantity"
-                            data-wf-conditions="%7B%22condition%22%3A%7B%22fields%22%3A%7B%22product%3Aec-product-type%22%3A%7B%22ne%22%3A%22e348fd487d0102946c9179d2a94bb613%22%2C%22type%22%3A%22Option%22%7D%7D%7D%2C%22dataPath%22%3A%22database.commerceOrder.userItems%5B%5D%22%7D"
                             inputmode="numeric" name="quantity" pattern="^[0-9]+$" required="" type="number"
                             value="1" />
                         </div>
@@ -268,8 +128,7 @@
                       <div class="w-commerce-commercecartfooter">
                         <div aria-atomic="true" aria-live="polite" class="w-commerce-commercecartlineitem">
                           <div>Subtotal</div>
-                          <div class="w-commerce-commercecartordervalue"
-                            data-wf-bindings="%5B%7B%22innerHTML%22%3A%7B%22type%22%3A%22CommercePrice%22%2C%22filter%22%3A%7B%22type%22%3A%22price%22%2C%22params%22%3A%5B%5D%7D%2C%22dataPath%22%3A%22database.commerceOrder.subtotal%22%7D%7D%5D">
+                          <div class="w-commerce-commercecartordervalue">
                           </div>
                         </div>
                         <div>
@@ -361,7 +220,7 @@
       <div class="w-layout-blockcontainer container w-container">
         <div class="title-wrapper">
           <h1>Our Blogs</h1>
-          <p class="body-large black">TechNova is a Webflow template showcasing our digital excellence.</p>
+          <p class="body-large black">MediaBundle is a Webflow template showcasing our digital excellence.</p>
         </div>
       </div>
     </section>
@@ -502,13 +361,13 @@
             <div class="faq w-dropdown" data-delay="0" data-hover="false"
               data-w-id="bcd3ef01-4316-9eb4-9efa-9ddac7f8069e">
               <div class="question-block w-dropdown-toggle">
-                <h5 class="faq-question">What services does TechNova provide?</h5><img alt="" class="plus-icon"
+                <h5 class="faq-question">What services does MediaBundle provide?</h5><img alt="" class="plus-icon"
                   loading="lazy"
                   src="https://cdn.prod.website-files.com/65129f2d60f024bc29b6a85a/6545f9be4278e4f6d5ea560e_plus-icon.svg" />
               </div>
               <nav class="answer-block w-dropdown-list">
                 <div class="faq-answer">
-                  <p>TechNova offers a range of digital services, including website design, development, digital
+                  <p>MediaBundle offers a range of digital services, including website design, development, digital
                     marketing, branding, SEO, content creation, social media management, and more.</p>
                 </div>
               </nav>
@@ -516,7 +375,7 @@
             <div class="faq w-dropdown" data-delay="0" data-hover="false"
               data-w-id="bcd3ef01-4316-9eb4-9efa-9ddac7f806a7">
               <div class="question-block w-dropdown-toggle">
-                <h5 class="faq-question">How do I start working with TechNova?</h5><img alt="" class="plus-icon"
+                <h5 class="faq-question">How do I start working with MediaBundle?</h5><img alt="" class="plus-icon"
                   loading="lazy"
                   src="https://cdn.prod.website-files.com/65129f2d60f024bc29b6a85a/6545f9be4278e4f6d5ea560e_plus-icon.svg" />
               </div>
@@ -531,7 +390,7 @@
             <div class="faq w-dropdown" data-delay="0" data-hover="false"
               data-w-id="bcd3ef01-4316-9eb4-9efa-9ddac7f806b0">
               <div class="question-block w-dropdown-toggle">
-                <h5 class="faq-question">What industries does TechNova specialize in?</h5><img alt="" class="plus-icon"
+                <h5 class="faq-question">What industries does MediaBundle specialize in?</h5><img alt="" class="plus-icon"
                   loading="lazy"
                   src="https://cdn.prod.website-files.com/65129f2d60f024bc29b6a85a/6545f9be4278e4f6d5ea560e_plus-icon.svg" />
               </div>
@@ -546,7 +405,7 @@
             <div class="faq w-dropdown" data-delay="0" data-hover="false"
               data-w-id="bcd3ef01-4316-9eb4-9efa-9ddac7f806b9">
               <div class="question-block w-dropdown-toggle">
-                <h5 class="faq-question">Can TechNova help improve our existing website?</h5><img alt=""
+                <h5 class="faq-question">Can MediaBundle help improve our existing website?</h5><img alt=""
                   class="plus-icon" loading="lazy"
                   src="https://cdn.prod.website-files.com/65129f2d60f024bc29b6a85a/6545f9be4278e4f6d5ea560e_plus-icon.svg" />
               </div>
@@ -560,13 +419,13 @@
             <div class="faq w-dropdown" data-delay="0" data-hover="false"
               data-w-id="bcd3ef01-4316-9eb4-9efa-9ddac7f806c2">
               <div class="question-block w-dropdown-toggle">
-                <h5 class="faq-question">What sets TechNova apart from other agencies?</h5><img alt="" class="plus-icon"
+                <h5 class="faq-question">What sets MediaBundle apart from other agencies?</h5><img alt="" class="plus-icon"
                   loading="lazy"
                   src="https://cdn.prod.website-files.com/65129f2d60f024bc29b6a85a/6545f9be4278e4f6d5ea560e_plus-icon.svg" />
               </div>
               <nav class="answer-block w-dropdown-list">
                 <div class="faq-answer">
-                  <p>TechNova stands out for its innovative solutions, client-centric approach, a talented team, and a
+                  <p>MediaBundle stands out for its innovative solutions, client-centric approach, a talented team, and a
                     commitment to delivering high-quality results within deadlines.</p>
                 </div>
               </nav>
@@ -588,7 +447,7 @@
             <div class="faq w-dropdown" data-delay="0" data-hover="false"
               data-w-id="bcd3ef01-4316-9eb4-9efa-9ddac7f806d4">
               <div class="question-block w-dropdown-toggle">
-                <h5 class="faq-question">Is TechNova available for ongoing support after the project is completed?</h5>
+                <h5 class="faq-question">Is MediaBundle available for ongoing support after the project is completed?</h5>
                 <img alt="" class="plus-icon" loading="lazy"
                   src="https://cdn.prod.website-files.com/65129f2d60f024bc29b6a85a/6545f9be4278e4f6d5ea560e_plus-icon.svg" />
               </div>
@@ -602,7 +461,7 @@
             <div class="faq w-dropdown" data-delay="0" data-hover="false"
               data-w-id="bcd3ef01-4316-9eb4-9efa-9ddac7f806dd">
               <div class="question-block w-dropdown-toggle">
-                <h5 class="faq-question">What are the payment terms and methods accepted by TechNova?</h5><img alt=""
+                <h5 class="faq-question">What are the payment terms and methods accepted by MediaBundle?</h5><img alt=""
                   class="plus-icon" loading="lazy"
                   src="https://cdn.prod.website-files.com/65129f2d60f024bc29b6a85a/6545f9be4278e4f6d5ea560e_plus-icon.svg" />
               </div>
@@ -644,7 +503,7 @@
                 src="https://cdn.prod.website-files.com/65129f2d60f024bc29b6a85a/65431fda930ee7ffc3c7c543_main-header-logo.svg" /></a>
             <p class="body-small">Powered by <a class="btn-link" href="#" target="_blank">Webflow</a>.</p>
           </div>
-          <p class="body-small">© 2023 TechNova. All rights reserved</p>
+          <p class="body-small">© 2023 MediaBundle. All rights reserved</p>
         </div>
         <div class="footer-right">
           <div class="footer-inner-block" id="w-node-_235cf3ef-33de-dd52-93f9-4f2e4be49656-4be4964a">
@@ -676,7 +535,7 @@
           </div>
           <div class="footer-contact" id="w-node-_235cf3ef-33de-dd52-93f9-4f2e4be4967a-4be4964a">
             <div class="caption-text black">contact info</div>
-            <div class="contact-inner-wrap"><a class="footer-link" href="mailto:mail@technova.io">mail@technova.io</a><a
+            <div class="contact-inner-wrap"><a class="footer-link" href="mailto:mail@mediabundle.io">mail@mediabundle.io</a><a
                 class="footer-link" href="tel:+12345678900">US: +1 234 567 8900</a></div>
             <div class="footer-social"><a class="w-inline-block" href="https://www.instagram.com" target="_blank"><img
                   alt="Instagram Logo Social Link" class="social-icon" loading="lazy"
@@ -692,7 +551,7 @@
         </div>
       </div>
     </div><a class="download-template w-inline-block"
-      href="https://webflow.com/templates/html/technova-agency-website-template" target="_blank"><img alt="Webflow"
+      href="https://webflow.com/templates/html/mediabundle-agency-website-template" target="_blank"><img alt="Webflow"
         loading="lazy"
         src="https://cdn.prod.website-files.com/65129f2d60f024bc29b6a85a/6660070c1d146572ed300918_icon-webflow.svg" /><img
         alt="Download template" loading="lazy"
@@ -703,7 +562,7 @@
     type="text/javascript"></script>
   <script src="https://cdn.prod.website-files.com/65129f2d60f024bc29b6a85a/js/webflow.4e99d1d51.js"
     type="text/javascript"></script>
-  <script src="/js/technova-integration.js"></script>
+  <script src="/js/mediabundle-integration.js"></script>
 </body>
 
 </html>

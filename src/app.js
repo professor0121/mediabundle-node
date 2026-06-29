@@ -36,7 +36,7 @@ app.use("/api/v1", apiRouter);
 app.use("/", pageRouter);
 
 // Serve static files from the public folder (CSS, JS, images, etc.)
-app.use(express.static(publicPath));
+app.use(express.static(publicPath, { extensions: ["html"] }));
 
 // Global Error Handler Middleware
 app.use(errorMiddleware);
