@@ -310,74 +310,25 @@
         </div>
         <div class="w-dyn-list">
           <div class="portfolio-list w-dyn-items" role="list">
-            <div class="w-dyn-item" role="listitem"><a class="portfolio-list-item w-inline-block"
-                data-w-id="6fc6ee18-83a5-7466-f3e2-06c12b34a12c" href="/project/future-landing-page">
-                <div class="portfolio-thumb-img"><img alt="" class="portfolio-thumb" loading="lazy"
-                    sizes="(max-width: 479px) 100vw, (max-width: 991px) 46vw, 47vw"
-                    src="https://cdn.prod.website-files.com/65438e658397c735408007ce/654395c4b367b07a07cdf398_project-thumb-01.jpg"
-                    srcset="https://cdn.prod.website-files.com/65438e658397c735408007ce/654395c4b367b07a07cdf398_project-thumb-01-p-500.jpg 500w, https://cdn.prod.website-files.com/65438e658397c735408007ce/654395c4b367b07a07cdf398_project-thumb-01-p-800.jpg 800w, https://cdn.prod.website-files.com/65438e658397c735408007ce/654395c4b367b07a07cdf398_project-thumb-01-p-1080.jpg 1080w, https://cdn.prod.website-files.com/65438e658397c735408007ce/654395c4b367b07a07cdf398_project-thumb-01.jpg 1200w"
+            <% projects.forEach(project => { %>
+            <div class="w-dyn-item" role="listitem">
+              <a class="portfolio-list-item w-inline-block" data-w-id="6fc6ee18-83a5-7466-f3e2-06c12b34a12c" href="<%= project.demoUrl || '#' %>">
+                <div class="portfolio-thumb-img">
+                  <img alt="<%= project.title %>" class="portfolio-thumb" loading="lazy" src="<%= project.imageUrl %>"
                     style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" />
                 </div>
                 <div class="portfolio-content">
                   <div>
-                    <h5>Future Landing Page</h5>
-                    <div class="caption-text">Web Design</div>
-                  </div><img alt="Btn Arrow Black Top right" class="arrow-icon" loading="lazy"
+                    <h5><%= project.title %></h5>
+                    <div class="caption-text"><%= project.type.toUpperCase() %></div>
+                  </div>
+                  <img alt="Btn Arrow Black Top right" class="arrow-icon" loading="lazy"
                     src="https://cdn.prod.website-files.com/65129f2d60f024bc29b6a85a/6543221c70f466551754b596_primary-btn-arrow.svg"
                     style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" />
                 </div>
-              </a></div>
-            <div class="w-dyn-item" role="listitem"><a class="portfolio-list-item w-inline-block"
-                data-w-id="6fc6ee18-83a5-7466-f3e2-06c12b34a12c" href="/project/ai-automation-dashboard">
-                <div class="portfolio-thumb-img"><img alt="" class="portfolio-thumb" loading="lazy"
-                    sizes="(max-width: 479px) 100vw, (max-width: 991px) 46vw, 47vw"
-                    src="https://cdn.prod.website-files.com/65438e658397c735408007ce/654395cf636be31c5ef26190_project-thumb-02.jpg"
-                    srcset="https://cdn.prod.website-files.com/65438e658397c735408007ce/654395cf636be31c5ef26190_project-thumb-02-p-500.jpg 500w, https://cdn.prod.website-files.com/65438e658397c735408007ce/654395cf636be31c5ef26190_project-thumb-02-p-800.jpg 800w, https://cdn.prod.website-files.com/65438e658397c735408007ce/654395cf636be31c5ef26190_project-thumb-02-p-1080.jpg 1080w, https://cdn.prod.website-files.com/65438e658397c735408007ce/654395cf636be31c5ef26190_project-thumb-02.jpg 1200w"
-                    style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" />
-                </div>
-                <div class="portfolio-content">
-                  <div>
-                    <h5>AI Automation Dashboard</h5>
-                    <div class="caption-text">UI UX</div>
-                  </div><img alt="Btn Arrow Black Top right" class="arrow-icon" loading="lazy"
-                    src="https://cdn.prod.website-files.com/65129f2d60f024bc29b6a85a/6543221c70f466551754b596_primary-btn-arrow.svg"
-                    style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" />
-                </div>
-              </a></div>
-            <div class="w-dyn-item" role="listitem"><a class="portfolio-list-item w-inline-block"
-                data-w-id="6fc6ee18-83a5-7466-f3e2-06c12b34a12c" href="/project/minimal-portfolio-showcase-application">
-                <div class="portfolio-thumb-img"><img alt="" class="portfolio-thumb" loading="lazy"
-                    sizes="(max-width: 479px) 100vw, (max-width: 991px) 46vw, 47vw"
-                    src="https://cdn.prod.website-files.com/65438e658397c735408007ce/654395d97e701fea29661d98_project-thumb-03.jpg"
-                    srcset="https://cdn.prod.website-files.com/65438e658397c735408007ce/654395d97e701fea29661d98_project-thumb-03-p-500.jpg 500w, https://cdn.prod.website-files.com/65438e658397c735408007ce/654395d97e701fea29661d98_project-thumb-03-p-800.jpg 800w, https://cdn.prod.website-files.com/65438e658397c735408007ce/654395d97e701fea29661d98_project-thumb-03-p-1080.jpg 1080w, https://cdn.prod.website-files.com/65438e658397c735408007ce/654395d97e701fea29661d98_project-thumb-03.jpg 1200w"
-                    style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" />
-                </div>
-                <div class="portfolio-content">
-                  <div>
-                    <h5>Minimal Portfolio Showcase Application</h5>
-                    <div class="caption-text">Mobile App</div>
-                  </div><img alt="Btn Arrow Black Top right" class="arrow-icon" loading="lazy"
-                    src="https://cdn.prod.website-files.com/65129f2d60f024bc29b6a85a/6543221c70f466551754b596_primary-btn-arrow.svg"
-                    style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" />
-                </div>
-              </a></div>
-            <div class="w-dyn-item" role="listitem"><a class="portfolio-list-item w-inline-block"
-                data-w-id="6fc6ee18-83a5-7466-f3e2-06c12b34a12c" href="/project/clean-show-business-card-mockup">
-                <div class="portfolio-thumb-img"><img alt="" class="portfolio-thumb" loading="lazy"
-                    sizes="(max-width: 479px) 100vw, (max-width: 991px) 46vw, 47vw"
-                    src="https://cdn.prod.website-files.com/65438e658397c735408007ce/6543937da5f9308ca9512a6d_project-thumb-04.jpg"
-                    srcset="https://cdn.prod.website-files.com/65438e658397c735408007ce/6543937da5f9308ca9512a6d_project-thumb-04-p-500.jpg 500w, https://cdn.prod.website-files.com/65438e658397c735408007ce/6543937da5f9308ca9512a6d_project-thumb-04-p-800.jpg 800w, https://cdn.prod.website-files.com/65438e658397c735408007ce/6543937da5f9308ca9512a6d_project-thumb-04-p-1080.jpg 1080w, https://cdn.prod.website-files.com/65438e658397c735408007ce/6543937da5f9308ca9512a6d_project-thumb-04.jpg 1200w"
-                    style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" />
-                </div>
-                <div class="portfolio-content">
-                  <div>
-                    <h5>Clean Show Business Card Mockup</h5>
-                    <div class="caption-text">Branding</div>
-                  </div><img alt="Btn Arrow Black Top right" class="arrow-icon" loading="lazy"
-                    src="https://cdn.prod.website-files.com/65129f2d60f024bc29b6a85a/6543221c70f466551754b596_primary-btn-arrow.svg"
-                    style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" />
-                </div>
-              </a></div>
+              </a>
+            </div>
+            <% }) %>
           </div>
         </div>
       </div>
@@ -431,41 +382,26 @@
         </div>
         <div class="w-dyn-list">
           <div class="blog-list w-dyn-items" role="list">
-            <div class="w-dyn-item" role="listitem"><a class="blog-list-item w-inline-block"
-                data-w-id="962a1d15-ce11-3637-84d6-2d0bb61b5d2b" href="/blog/5-key-trends-shaping-e-commerce-in-2023">
-                <div class="blog-thumb-img"><img alt="" class="blog-thumb" loading="lazy"
-                    sizes="(max-width: 479px) 100vw, (max-width: 767px) 95vw, (max-width: 991px) 46vw, 47vw"
-                    src="https://cdn.prod.website-files.com/65438e658397c735408007ce/65448b9fc459e17c17aeea74_blog-thumb-01.jpg"
-                    srcset="https://cdn.prod.website-files.com/65438e658397c735408007ce/65448b9fc459e17c17aeea74_blog-thumb-01-p-500.jpg 500w, https://cdn.prod.website-files.com/65438e658397c735408007ce/65448b9fc459e17c17aeea74_blog-thumb-01-p-800.jpg 800w, https://cdn.prod.website-files.com/65438e658397c735408007ce/65448b9fc459e17c17aeea74_blog-thumb-01.jpg 1200w"
+            <% blogs.forEach(blog => { %>
+            <div class="w-dyn-item" role="listitem">
+              <a class="blog-list-item w-inline-block" data-w-id="962a1d15-ce11-3637-84d6-2d0bb61b5d2b" href="/blog/<%= blog.slug %>">
+                <div class="blog-thumb-img">
+                  <img alt="<%= blog.title %>" class="blog-thumb" loading="lazy" src="<%= blog.coverImage %>"
                     style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" />
                 </div>
                 <div class="blog-content">
                   <div class="row-10 align-center">
-                    <div class="caption-text">Technology</div>
+                    <div class="caption-text"><%= blog.tags[0] || 'Agency' %></div>
                     <div class="yellow-dot"></div>
-                    <p class="body-small">November 8, 2023</p>
+                    <p class="body-small">
+                      <%= new Date(blog.createdAt).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }) %>
+                    </p>
                   </div>
-                  <h5>5 Key Trends Shaping E-commerce in 2023</h5>
+                  <h5><%= blog.title %></h5>
                 </div>
-              </a></div>
-            <div class="w-dyn-item" role="listitem"><a class="blog-list-item w-inline-block"
-                data-w-id="962a1d15-ce11-3637-84d6-2d0bb61b5d2b"
-                href="/blog/the-power-of-influencer-marketing-a-comprehensive-guide">
-                <div class="blog-thumb-img"><img alt="" class="blog-thumb" loading="lazy"
-                    sizes="(max-width: 479px) 100vw, (max-width: 767px) 95vw, (max-width: 991px) 46vw, 47vw"
-                    src="https://cdn.prod.website-files.com/65438e658397c735408007ce/65448b860f48a51cb7e63d25_blog-thumb-02.jpg"
-                    srcset="https://cdn.prod.website-files.com/65438e658397c735408007ce/65448b860f48a51cb7e63d25_blog-thumb-02-p-500.jpg 500w, https://cdn.prod.website-files.com/65438e658397c735408007ce/65448b860f48a51cb7e63d25_blog-thumb-02-p-800.jpg 800w, https://cdn.prod.website-files.com/65438e658397c735408007ce/65448b860f48a51cb7e63d25_blog-thumb-02-p-1080.jpg 1080w, https://cdn.prod.website-files.com/65438e658397c735408007ce/65448b860f48a51cb7e63d25_blog-thumb-02.jpg 1200w"
-                    style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" />
-                </div>
-                <div class="blog-content">
-                  <div class="row-10 align-center">
-                    <div class="caption-text">Marketing</div>
-                    <div class="yellow-dot"></div>
-                    <p class="body-small">November 8, 2023</p>
-                  </div>
-                  <h5>The Power of Influencer Marketing: A Comprehensive Guide</h5>
-                </div>
-              </a></div>
+              </a>
+            </div>
+            <% }) %>
           </div>
         </div>
       </div>

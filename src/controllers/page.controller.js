@@ -5,7 +5,9 @@ import asyncHandler from "../utils/asyncHandler.js";
 
 // Render Homepage
 export const renderHome = asyncHandler(async (req, res) => {
-    res.render("index");
+    const projects = await Project.find().sort({ createdAt: -1 }).limit(4);
+    const blogs = await Blog.find({ status: "published" }).sort({ createdAt: -1 }).limit(2);
+    res.render("index", { projects, blogs });
 });
 
 // Render About Us (Dynamic Team List)

@@ -228,27 +228,25 @@
       <div class="w-layout-blockcontainer container w-container">
         <div class="w-dyn-list">
           <div class="portfolio-list w-dyn-items" role="list">
-            <% projects.forEach(project=> { %>
-              <div class="w-dyn-item" role="listitem">
-                <a class="portfolio-list-item w-inline-block" href="<%= project.demoUrl || '#' %>">
-                  <div class="portfolio-thumb-img">
-                    <img src="<%= project.imageUrl %>" class="portfolio-thumb" loading="lazy" />
+            <% projects.forEach(project => { %>
+            <div class="w-dyn-item" role="listitem">
+              <a class="portfolio-list-item w-inline-block" data-w-id="6fc6ee18-83a5-7466-f3e2-06c12b34a12c" href="<%= project.demoUrl || '#' %>">
+                <div class="portfolio-thumb-img">
+                  <img src="<%= project.imageUrl %>" class="portfolio-thumb" loading="lazy"
+                    style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" />
+                </div>
+                <div class="portfolio-content">
+                  <div>
+                    <h5><%= project.title %></h5>
+                    <div class="caption-text"><%= project.type.toUpperCase() %></div>
                   </div>
-                  <div class="portfolio-content">
-                    <div>
-                      <h5>
-                        <%= project.title %>
-                      </h5>
-                      <div class="caption-text">
-                        <%= project.type.toUpperCase() %>
-                      </div>
-                    </div>
-                    <img alt="Btn Arrow Black" class="arrow-icon" loading="lazy"
-                      src="https://cdn.prod.website-files.com/65129f2d60f024bc29b6a85a/6543221c70f466551754b596_primary-btn-arrow.svg" />
-                  </div>
-                </a>
-              </div>
-              <% }) %>
+                  <img alt="Btn Arrow Black" class="arrow-icon" loading="lazy"
+                    src="https://cdn.prod.website-files.com/65129f2d60f024bc29b6a85a/6543221c70f466551754b596_primary-btn-arrow.svg"
+                    style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" />
+                </div>
+              </a>
+            </div>
+            <% }) %>
           </div>
         </div>
         <div aria-label="List" class="w-pagination-wrapper pagination" role="navigation"><a aria-label="Next Page"
